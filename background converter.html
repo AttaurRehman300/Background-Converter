@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background changer</title>
+    
+    <style>
+        
+        body{
+            margin: 0px;
+            padding: 20px 100px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        p{
+         text-align: justify;
+         font-size: 18px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        .btn{
+            height: 20px;
+            width: 20px;
+            display: inline-block;
+            border: solid grey 2px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #white{
+            background-color: white;
+        }
+        #aqua{
+            background-color: aquamarine;
+        }
+        #violet{
+            background-color: #ce9aff;
+        }
+        #black{
+            background-color: black;
+        }
+        #color-switcher{
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+        <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+        <span class="btn" id="voilet" onclick="changeBG('#ce9aff')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+    <h1 class="text">About US</h1>
+    <img src="https://thumbs.dreamstime.com/z/business-people-holding-placards-forming-contact-us-group-multiethnic-group-41013659.jpg" alt="">
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque excepturi inventore nulla aut accusantium fugit voluptatum, quo odit numquam quisquam, facere necessitatibus animi temporibus aliquid fugiat ea incidunt! At, sapiente! Eligendi corrupti ducimus illum repellendus natus temporibus? Id ullam sequi pariatur sapiente aperiam error consequatur, atque fugit! Sit facere vitae, sed accusantium, totam cupiditate optio quis odio laboriosam perspiciatis voluptatum modi autem nisi iste ex rem ea eveniet tempore quo incidunt a, nam architecto recusandae dignissimos! Alias nesciunt odio vel iste sapiente. Aliquam illum in, velit perferendis tenetur consequuntur explicabo nesciunt! Architecto ad deserunt beatae aliquam optio autem? Sit aut, vel labore sint voluptas optio officia doloribus nemo iusto! Id ratione temporibus, repellendus eum ex beatae quod aliquam maiores quaerat! Sunt voluptas maiores earum nostrum quis natus laborum, culpa facere, voluptatem itaque minima assumenda obcaecati rem quo qui numquam architecto maxime esse distinctio ex ad unde excepturi. Animi ut cum quod ratione sit et maxime aliquam error adipisci debitis atque similique, earum voluptatum eaque id! Voluptate nemo repellendus eum, asperiores accusantium, sed eveniet, natus nulla impedit nihil aut adipisci modi. Nobis quas quaerat, obcaecati fuga id assumenda. Commodi nam corporis illo, quo nulla sequi sint quod. Eius, aperiam ratione sed numquam facilis ducimus quam perferendis cum eveniet distinctio neque id voluptatum. Laudantium facere explicabo modi numquam odio optio rem corrupti reiciendis dolor consequuntur placeat ipsum nam excepturi beatae sapiente deleniti similique, quaerat quos! Quo suscipit pariatur eos, magni voluptates, rerum eaque neque animi mollitia optio vero sint esse distinctio nemo deleniti sequi consectetur fugiat obcaecati voluptatibus quibusdam impedit, incidunt quae provident! Est quia recusandae repellat suscipit fugiat hic architecto, ipsa ipsam obcaecati fugit reprehenderit dolores dignissimos saepe nemo aspernatur assumenda, eligendi, amet facilis! Culpa deleniti quidem maxime ipsum voluptate commodi consequuntur? Vel, reiciendis minus est libero saepe soluta aspernatur, laborum aperiam corporis molestiae odit quo harum cupiditate consequatur tempora illum sit explicabo non repudiandae. Delectus recusandae nesciunt soluta vero error cupiditate esse, deserunt, labore porro assumenda quae temporibus laborum fugiat, quasi nam laudantium inventore est. Laboriosam numquam voluptatibus quis saepe, fugiat molestias adipisci debitis commodi ratione sapiente aperiam! Officia omnis architecto impedit obcaecati deserunt nulla aut, iusto dolorum nihil sunt asperiores soluta reiciendis pariatur laudantium distinctio odit veritatis accusantium voluptatum exercitationem laboriosam tenetur consequatur dignissimos? Quae, quas officiis. Fugiat aliquid deserunt aperiam laborum ex sapiente sed ratione, temporibus quae delectus iure provident dolorem. Laudantium voluptatem rerum, quo eligendi omnis ab qui aut voluptates illum corporis eos iure quos ratione obcaecati quasi assumenda alias quas! Tempore tenetur dolores fuga inventore cum aliquid possimus animi necessitatibus quisquam eius vitae laudantium magni magnam quis similique architecto iure nisi sed, perferendis doloribus optio mollitia quam suscipit. Placeat, sequi rem nisi, natus aut ducimus praesentium et illum sint ipsum, reiciendis laboriosam ullam? Assumenda unde sapiente ad enim et repudiandae maiores laborum quis debitis impedit cum omnis excepturi porro, doloremque vero perspiciatis deleniti quos officiis libero blanditiis consectetur. Cupiditate quam consequatur laborum tempore, accusamus nobis. Adipisci ad assumenda doloremque dolore! Obcaecati animi accusamus minima nulla vel?
+    </p>
+    <script>
+        function changeBG(color){
+            document.body.style.backgroundColor=color;
+            let txt = document.getElementsByClassName('text');
+            if(color=="#000000"){
+                for(let elm of txt){
+                    elm.style.color="white";
+
+                }
+
+            }else{
+                for(let elm of txt){
+                    elm.style.color="black";
+
+                }
+
+            }
+        }
+
+    </script>
+</body>
+</html>
